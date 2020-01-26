@@ -216,7 +216,7 @@ class NeuralNetwork(object):
             # Check if this is true
             delta[l] = np.dot(delta[l+1], self.weights[l]) * activation(pre_activations[l], derivative=True)
             #I HAVE COMMENTED THIS PART OUT AS ACTIVATIONS WASN'T PASSED
-            #if delta[l].shape[0] != activations[l].shape[0]:
+            #if np.transpose(delta[l]) != np.transpose(activations[l]):
              #   print("error in computing deltas!!!!!!!!")
         return deltas
 
