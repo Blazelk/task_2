@@ -1,7 +1,5 @@
 !pip install numpy mnist matplotlib sklearn
 
-import tensorflow as tf
-from tensorflow.examples.tutorials.mnist import input_data
 from matplotlib import pyplot as plt
 import numpy as np
 #from sklearn.datasets import fetch_mldata
